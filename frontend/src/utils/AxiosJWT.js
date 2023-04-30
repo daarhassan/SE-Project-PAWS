@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseURL = 'http://pawspets.onrender.com/';
+const baseURL = 'pawspets.onrender.com/';
 
 var loginToken = localStorage.getItem('jwtToken');
 console.log("Token: "+loginToken);
