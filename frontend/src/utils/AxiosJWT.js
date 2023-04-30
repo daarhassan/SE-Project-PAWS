@@ -7,7 +7,7 @@ console.log("Token: "+loginToken);
 
 const axiosInstance = axios.create({
     baseURL: baseURL,
-    timeout: 10000,
+    timeout: 2000,
     headers: {
         'Authorization': loginToken ? (loginToken ?  "Bearer " + loginToken: null) : null,
         'Content-Type': 'application/json',
