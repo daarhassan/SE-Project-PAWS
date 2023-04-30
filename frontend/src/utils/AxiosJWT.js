@@ -1,13 +1,13 @@
 import axios from 'axios'
 
-const baseURL = 'pawspets.onrender.com/';
+const baseURL = 'https://pawspets.onrender.com/';
 
 var loginToken = localStorage.getItem('jwtToken');
 console.log("Token: "+loginToken);
 
 const axiosInstance = axios.create({
     baseURL: baseURL,
-    timeout: 2000,
+    timeout: 5000,
     headers: {
         'Authorization': loginToken ? (loginToken ?  "Bearer " + loginToken: null) : null,
         'Content-Type': 'application/json',
